@@ -1,0 +1,97 @@
+.NavBar{
+    position: absolute;
+    bottom: 0;
+    width: 240px;
+
+}
+
+.NavItems{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.link:hover{
+    background: linear-gradient(to left, #D3D3D3, #FFFFFF);
+    border-radius: 0.6rem;
+    color: black;
+    padding: 1px;
+}
+
+.icon{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 3rem;
+    color: white;
+}
+
+.link:hover .icon{
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+    color: black;
+}
+
+.SidebarText{
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+
+}
+.horizontal-line {
+    width: 5px;
+    height: 100vh;
+    background-color: #000;
+    position: absolute;
+    top: 0; 
+    left: 100%;
+    transform: translateX(-50%);
+  }
+
+
+@media (max-width: 1024px) {
+    .icon{
+        font-size: 2rem;
+    }
+    .SidebarText{
+        font-size: large;
+    }
+}
+
+@media (max-width: 768px) {
+    .SidebarText{
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .SidebarText{
+        display: none;
+    }
+    .NavItems{
+        display: flex;
+        flex-direction: row;
+    }
+    .link:hover{
+        background: none;
+    }
+    .link{
+        padding: none;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    .icon{
+        font-size: 2rem;
+    }
+    .NavBar{
+        width: 100%;
+       
+    }
+}

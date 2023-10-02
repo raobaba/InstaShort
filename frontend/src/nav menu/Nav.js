@@ -7,6 +7,7 @@ import { PiFilmReelFill } from "react-icons/pi";
 import { AiFillWechat } from "react-icons/ai";
 import { AiFillNotification } from "react-icons/ai";
 import { AiFillSetting } from "react-icons/ai";
+import { BsFillPersonFill } from "react-icons/bs";
 import Box from '@mui/material/Box';
 
 
@@ -44,6 +45,10 @@ const Nav = () => {
           <Link className="link" to="/Notifications">
             <AiFillNotification className="icon" />
             <div className="SidebarText">Notifications</div>
+          </Link>
+          <Link className="link" to="/Profile">
+            <BsFillPersonFill className="icon" />
+            <div className="SidebarText">Profile</div>
           </Link>
           <Link className="link" to="/Settings">
             <AiFillSetting className="icon" />

@@ -9,6 +9,7 @@ import Notifications from "./all pages/Notifications";
 import Reels from "./all pages/Reels";
 import Settings from "./all pages/Settings";
 import Layout from './all pages/Layout';
+import Profile from './all pages/Profile';
 
 const router = createBrowserRouter([
 
@@ -47,6 +48,10 @@ const router = createBrowserRouter([
       {
         path: "/Settings",
         element: <Settings />,
+      },  
+      {
+        path: "/Profile",
+        element: <Profile />,
       },    
      
     ]

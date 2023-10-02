@@ -1,0 +1,79 @@
+.NavBar{
+    position: absolute;
+    bottom: 0;
+}
+
+.NavItems{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.link:hover{
+    background: linear-gradient(to left, #D3D3D3, #FFFFFF);
+    border-radius: 0.6rem;
+}
+
+.icon{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 3rem;
+}
+
+.link:hover .icon{
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+.SidebarText{
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+}
+
+@media (max-width: 1024px) {
+    .icon{
+        font-size: 2rem;
+    }
+    .SidebarText{
+        font-size: large;
+    }
+}
+
+@media (max-width: 768px) {
+    .SidebarText{
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .SidebarText{
+        display: none;
+    }
+    .NavItems{
+        display: flex;
+        flex-direction: row;
+    }
+    .link:hover{
+        background: none;
+    }
+    .link{
+        padding: none;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    .icon{
+        font-size: 2rem;
+    }
+    .NavBar{
+        width: 100%;
+    }
+}

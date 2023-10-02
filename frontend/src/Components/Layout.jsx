@@ -1,5 +1,5 @@
 import React from 'react'
-import Nav from '../nav menu/Nav'
+import Nav from "../Navbar/Nav"
 import { Box } from '@mui/material'
 import { Outlet } from 'react-router-dom'
 

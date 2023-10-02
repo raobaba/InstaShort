@@ -6,7 +6,6 @@ import "../App.css";
 const Messages = () => {
   return (
     <>
-      <Nav />
       <div className='content'>
         <div>Messages</div>
       </div>

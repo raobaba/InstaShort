@@ -6,7 +6,6 @@ import "../App.css";
 const Settings = () => {
   return (
     <>
-      <Nav />
       <div className="content">
         <div>Settings</div>
       </div>

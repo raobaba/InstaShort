@@ -1,6 +1,8 @@
 .NavBar{
     position: absolute;
     bottom: 0;
+    width: 240px;
+    border: 1px solid red;
 }
 
 .NavItems{
@@ -11,7 +13,7 @@
 
 .link{
     text-decoration: none;
-    color: black;
+    color: white;
     margin-bottom: 2rem;
     display: flex;
     flex-direction: row;
@@ -20,24 +22,39 @@
 .link:hover{
     background: linear-gradient(to left, #D3D3D3, #FFFFFF);
     border-radius: 0.6rem;
+    color: black;
+    padding: 1px;
 }
 
 .icon{
     margin-left: 1rem;
     margin-right: 1rem;
     font-size: 3rem;
+    color: white;
 }
 
 .link:hover .icon{
     transform: scale(1.2);
     transition: transform 0.3s ease;
+    color: black;
 }
 
 .SidebarText{
     display: flex;
     align-items: center;
     font-size: x-large;
+
 }
+.horizontal-line {
+    width: 5px;
+    height: 100vh;
+    background-color: #000;
+    position: absolute;
+    top: 0; 
+    left: 100%;
+    transform: translateX(-50%);
+  }
+
 
 @media (max-width: 1024px) {
     .icon{
@@ -75,5 +92,6 @@
     }
     .NavBar{
         width: 100%;
+       
     }
 }

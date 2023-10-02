@@ -6,7 +6,6 @@ import "../App.css";
 const Reels = () => {
   return (
     <>
-      <Nav />
       <div className="content">
         <div>Reels</div>
       </div>

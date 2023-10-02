@@ -5,7 +5,6 @@ import '../App.css';
 const Search = () => {
   return (
     <>
-      <Nav />
       <div className="content">
         <div>Search</div>
       </div>

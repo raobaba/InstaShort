@@ -8,39 +8,51 @@ import Messages from "./all pages/Messages";
 import Notifications from "./all pages/Notifications";
 import Reels from "./all pages/Reels";
 import Settings from "./all pages/Settings";
+import Layout from './all pages/Layout';
 
 const router = createBrowserRouter([
+
   {
     path: "/",
-    element: <Login />,
+    element : <Layout/>,
+    children: [
+      {
+        path: "/",
+        element: <Login />,
+      },
+      {
+        path: "/Home",
+        element: <Home />,
+        
+      },
+      {
+        path: "/Search",
+        element: <Search />,
+      },
+      {
+        path: "/Notifications",
+        element: <Notifications />,
+      },
+      ,
+      {
+        path: "/Reels",
+        element: <Reels />,
+      },
+      ,
+      {
+        path: "/Messages",
+        element: <Messages />,
+      },
+      ,
+      {
+        path: "/Settings",
+        element: <Settings />,
+      },    
+     
+    ]
   },
-  {
-    path: "/Home",
-    element: <Home />,
-  },
-  {
-    path: "/Search",
-    element: <Search />,
-  },
-  {
-    path: "/Notifications",
-    element: <Notifications />,
-  },
-  ,
-  {
-    path: "/Reels",
-    element: <Reels />,
-  },
-  ,
-  {
-    path: "/Messages",
-    element: <Messages />,
-  },
-  ,
-  {
-    path: "/Settings",
-    element: <Settings />,
-  },
+
+  
 ]);
 
 function App() {

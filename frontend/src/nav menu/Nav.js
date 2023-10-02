@@ -7,12 +7,23 @@ import { PiFilmReelFill } from "react-icons/pi";
 import { AiFillWechat } from "react-icons/ai";
 import { AiFillNotification } from "react-icons/ai";
 import { AiFillSetting } from "react-icons/ai";
+import Box from '@mui/material/Box';
 
 
 const Nav = () => {
   return (
     <>
-      <div className="NavBar">
+     <Box sx={{
+          bgcolor: '#2e2c39',
+          boxShadow: 1,
+          borderRadius: 2,
+         
+          p:1,
+          paddingTop:'500px',
+          color:'white',
+          
+        }} className="NavBar">
+      
         <div className="NavItems">
           <Link className="link" to="/Home">
             <AiTwotoneHome className="icon" />
@@ -39,7 +50,10 @@ const Nav = () => {
             <div className="SidebarText">Settings</div>
           </Link>
         </div>
-      </div>
+       
+     
+      </Box>
+      
     </>
   );
 }

@@ -6,7 +6,6 @@ import "../App.css";
 const Notifications = () => {
   return (
     <>
-      <Nav />
       <div className="content">
         <div>Notifications</div>
       </div>

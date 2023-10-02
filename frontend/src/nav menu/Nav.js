@@ -14,7 +14,7 @@ const Nav = () => {
   return (
     <>
      <Box sx={{
-          bgcolor: '#2e2c39',
+          bgcolor: '#171717',
           boxShadow: 1,
           borderRadius: 2,
          

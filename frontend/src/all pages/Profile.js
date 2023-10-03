@@ -74,25 +74,57 @@ const Profile = () => {
 
                 <Box ml={5} width={'100%'}>
                     <Card >
-                        <CardContent >
-                            <Typography gutterBottom variant="h5" component="div">
-                                Stories Component
+                       
+                            <Typography gutterBottom variant="h5" p={1} pb={0} component="div">
+                                Stories 
                             </Typography>
-                            <Box className='stories-container' display={'inline'}>
+                            <Box className='stories-container' display={'flex'} flexDirection={'row'} padding={2}>
                             <CardMedia
-                            sx={{ height: 200, width:200, borderRadius:'100%' }}
+                            sx={{ height: 150, width:150, borderRadius:'100%' , margin:'3px' }}
                             image="https://pixinvent.com/materialize-material-design-admin-template/app-assets/images/user/12.jpg"
                             title="green iguana"
                         />
                          <CardMedia
-                            sx={{ height: 200,width:200, borderRadius:'100%' }}
+                            sx={{ height: 150, width:150,    borderRadius:'100%' , margin:'3px' }}
                             image="https://pixinvent.com/materialize-material-design-admin-template/app-assets/images/user/12.jpg"
                             title="green iguana"
                         />
+                          <CardMedia
+                            sx={{ height: 150, width:150,    borderRadius:'100%' , margin:'3px' }}
+                            image="https://pixinvent.com/materialize-material-design-admin-template/app-assets/images/user/12.jpg"
+                            title="green iguana"
+                        />
+                          <CardMedia
+                            sx={{ height: 150, width:150,    borderRadius:'100%' , margin:'3px' }}
+                            image="https://pixinvent.com/materialize-material-design-admin-template/app-assets/images/user/12.jpg"
+                            title="green iguana"
+                        />
+                          <CardMedia
+                            sx={{ height: 150, width:150,    borderRadius:'100%' , margin:'3px' }}
+                            image="https://pixinvent.com/materialize-material-design-admin-template/app-assets/images/user/12.jpg"
+                            title="green iguana"
+                        />
+                       
                         </Box>
-                        </CardContent>
+                        
                     </Card>
+
+                    <Box mt={2} my={5}>
+                        <Card>
+                            <Box  p={1}>
+                            <Typography gutterBottom variant="h5" p={1} pb={0} component="div">
+                                Posts 
+                            </Typography>
+                            <Box gridTemplateColumns={5}>
+                                <Card >
+                                 hi
+                                </Card>
+                            </Box>
+                            </Box>
+                        </Card>
+                    </Box>
                 </Box>
+               
             </Box>
         </div>
 

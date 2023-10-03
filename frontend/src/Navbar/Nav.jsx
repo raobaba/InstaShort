@@ -45,6 +45,10 @@ const Nav = () => {
                 <AiFillWechat className="icon" />
                 <div className="SidebarText">Message</div>
               </Link>
+              <Link className="link" to="/Profile">
+                <AiFillSetting className="icon" />
+                <div className="SidebarText">Profile</div>
+              </Link>
               <Link className="link" to="/Settings">
                 <AiFillSetting className="icon" />
                 <div className="SidebarText">Settings</div>

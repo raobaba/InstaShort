@@ -8,6 +8,7 @@ import Notifications from "../Components/Notifications";
 import Reels from "../Components/Reels";
 import Settings from "../Components/Settings";
 import Layout from '../Components/Layout';
+import Profile from '../Components/Profile';
 
 // Define your routes using createBrowserRouter
 const Route = createBrowserRouter([
@@ -42,6 +43,10 @@ const Route = createBrowserRouter([
       {
         path: "/Settings",
         element: <Settings />,
+      },
+      {
+        path: "/Profile",
+        element: <Profile />,
       },
     ]
   },

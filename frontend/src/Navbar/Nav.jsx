@@ -14,17 +14,10 @@ const Nav = () => {
   const isBigScreen = useMediaQuery({ query: "(min-width: 768px)" });
   return (
     <>
-      <div
-        style={{
-          height: "100%",
-          display: "flex",
-          flexDirection: "column-reverse",
-        }}
-      >
+      
         <Box
           sx={{
             bgcolor: "#171717",
-            flex:"1"
           }}
           className="NavBar"
         >
@@ -76,7 +69,7 @@ const Nav = () => {
             </div>
           )}
         </Box>
-      </div>
+      
     </>
   );
 }

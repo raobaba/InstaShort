@@ -1,8 +1,6 @@
 .NavBar{
     position: absolute;
-    bottom: 0;
-    width: 240px;
-
+    bottom: 0;   
 }
 
 .NavItems{
@@ -17,6 +15,7 @@
     margin-bottom: 2rem;
     display: flex;
     flex-direction: row;
+    padding: 1px;
 }
 
 .link:hover{
@@ -43,17 +42,7 @@
     display: flex;
     align-items: center;
     font-size: x-large;
-
 }
-.horizontal-line {
-    width: 5px;
-    height: 100vh;
-    background-color: #000;
-    position: absolute;
-    top: 0; 
-    left: 100%;
-    transform: translateX(-50%);
-  }
 
 
 @media (max-width: 1024px) {
@@ -65,33 +54,22 @@
     }
 }
 
-@media (max-width: 768px) {
-    .SidebarText{
-        display: none;
-    }
-}
-
 @media (max-width: 480px) {
-    .SidebarText{
-        display: none;
+    .NavBar{
+        width: 100%;
     }
     .NavItems{
         display: flex;
         flex-direction: row;
-    }
-    .link:hover{
-        background: none;
+        width: 100%;
     }
     .link{
         padding: none;
         justify-content: space-evenly;
-        width: 100%;
+        padding: none;
     }
     .icon{
-        font-size: 2rem;
-    }
-    .NavBar{
-        width: 100%;
-       
+        margin-right: none;
+        margin-left: none;
     }
 }

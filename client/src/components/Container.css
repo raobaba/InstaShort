@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  margin: auto;
+  width: 99%;
+  height: 100vh;
+  border: 1px solid white;
+  color: white;
+}
+
+.sidebar-container {
+  width: 17.5%;
+}
+.routing-container {
+  width: 82.5%;
+  border: 1px solid white;
+}

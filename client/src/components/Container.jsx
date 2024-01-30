@@ -3,7 +3,7 @@ import SideBar from "./SideBar";
 import Routing from "../route/Routing";
 import "./Container.css";
 import Navbar from "./Navbar/Navbar";
-import MobileFooter from "./Navbar/Mobile-Footer";
+import MobileFooter from "./Navbar/MobileFooter";
 
 function Container() {
   return (

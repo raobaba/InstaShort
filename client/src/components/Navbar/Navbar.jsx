@@ -1,20 +1,27 @@
-import React from 'react'
-import './Navbar.css'
+import React from "react";
+import "./Navbar.css";
 import { NavLink } from "react-router-dom";
+import { FaRegHeart, FaSearch } from "react-icons/fa"; // Import FaSearch from react-icons/fa
+
 function Navbar() {
   return (
-    <div className='navbar'>
-       <div>
-       <NavLink to="/" className="logo-contain">
-        <h2 className="logo">InstaShort</h2>
-      </NavLink>
-       </div>
-       <div>
-        <input type="text" placeholder='search here...' />
-       </div>
-       <div></div>
+    <div className="navbar">
+      <div className="left-section">
+        <NavLink to="/">
+          <h2 className="insta-text">InstaShort</h2>
+        </NavLink>
+      </div>
+      <div className="center-section">
+        <input type="text" placeholder="Search here..." />
+        <FaSearch className="search-icon" />
+      </div>
+      <div className="right-section">
+        <NavLink to="/notifications">
+          <FaRegHeart />
+        </NavLink>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

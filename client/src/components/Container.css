@@ -22,11 +22,14 @@
     display: none;
   }
   .routing{
-    width: 99%;
     height: 88vh;
     border: 1px solid white;
   }
   .mobile{
     display: block;
+  }
+  .mobile-footer-container{
+    width: 99.5%;
+    height: 40px;
   }
 }

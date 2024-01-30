@@ -1,0 +1,23 @@
+.mobile-footer {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .mobile-container {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+  }
+
+  .icon-link svg {
+    font-size: 28px; 
+  }
+  
+  .icon-link {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-top: 5px;
+  }
+  
+  

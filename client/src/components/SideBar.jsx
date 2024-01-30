@@ -1,8 +1,7 @@
-// SideBar.js
-
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./Sidebar.css";
+import InstaShort from '../assets/InstaShort.png'
 import { GrHomeRounded } from "react-icons/gr";
 import { BsSearch } from "react-icons/bs";
 import { MdOutlineExplore } from "react-icons/md";
@@ -17,6 +16,7 @@ function SideBar() {
   return (
     <div className="sidebar">
        <NavLink to="/" className='logo-contain'>
+        <img src={InstaShort} className="instaShort" alt="instashort-logo" width={25} height={25} />
         <h2 className="logo">InstaShort</h2>
       </NavLink>
       <NavLink to="/" className="sidebar-item" activeClassName="active">

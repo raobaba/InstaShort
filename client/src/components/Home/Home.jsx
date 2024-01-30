@@ -45,16 +45,36 @@ function Home() {
   ];
 
   const slickSettings = {
-    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 6,
     slidesToScroll: 1,
     responsive: [
       {
+        breakpoint: 1300,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
         breakpoint: 768,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
@@ -64,15 +84,22 @@ function Home() {
   return (
     <div className="home-container">
       <div className="container-container">
-        <Slider {...slickSettings} className="status-container">
-          {userStatus.map((user, index) => (
-            <div key={index} className="user-status">
-              <img src={user.userProfileLink} alt={user.username} width={25} height={25}/>
-              <p>{user.username}</p>
-            </div>
-          ))}
-        </Slider>
-        <div>Home</div>
+        <div className="status-item">
+          <Slider {...slickSettings} className="status-container">
+            {userStatus.map((user, index) => (
+              <div key={index} className="user-status">
+                <img
+                  src={user.userProfileLink}
+                  alt={user.username}
+                  width={25}
+                  height={25}
+                />
+                <p>{user.username}</p>
+              </div>
+            ))}
+          </Slider>
+        </div>
+        <div className="home-item">HomeRa</div>
       </div>
       <div className="suggestion-container">
         <div>Suggestions</div>

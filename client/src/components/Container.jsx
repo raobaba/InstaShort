@@ -18,17 +18,17 @@ function Container() {
         </div>
       </div>
       <div className="mobile">
-          <div className="navbar-container">
-            <Navbar />
-          </div>
-          <div className="routing">
-            <Routing />
-          </div>
-
-          <div className="mobile-footer-container">
-            <MobileFooter />
-          </div>
+        <div className="navbar-container">
+          <Navbar />
         </div>
+        <div className="routing">
+          <Routing />
+        </div>
+
+        <div className="mobile-footer-container">
+          <MobileFooter />
+        </div>
+      </div>
     </>
   );
 }

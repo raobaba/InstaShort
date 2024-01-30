@@ -6,9 +6,8 @@
 }
 
 .container-container {
-  
   width: 60%;
-  border: 1px solid white;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
 }
 
 .status-item{
@@ -17,7 +16,6 @@
 }
 .suggestion-container {
   width: 40%;
-  border: 1px solid white;
 }
 
 .status-container {
@@ -50,4 +48,12 @@
   .user-status {
     flex: 0 0 45%;
   }
+  .suggestion-container {
+    display: none;
+  }
+  /* .container-container {
+    width: 90%;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+  } */
+  
 }

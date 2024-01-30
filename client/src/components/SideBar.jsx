@@ -12,7 +12,6 @@ import { CgProfile } from "react-icons/cg";
 import { FiMenu } from "react-icons/fi";
 import { PiVideoDuotone } from "react-icons/pi";
 
-
 function SideBar() {
   const navigationItems = [
     { to: "/", icon: <GrHomeRounded />, label: "Home" },

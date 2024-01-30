@@ -10,14 +10,15 @@ import { FaRegHeart } from "react-icons/fa";
 import { VscDiffAdded } from "react-icons/vsc";
 import { CgProfile } from "react-icons/cg";
 import { FiMenu } from "react-icons/fi";
-import { FaPlay } from "react-icons/fa";
+import { PiVideoDuotone } from "react-icons/pi";
+
 
 function SideBar() {
   const navigationItems = [
     { to: "/", icon: <GrHomeRounded />, label: "Home" },
     { to: "/search", icon: <BsSearch />, label: "Search" },
     { to: "/explore", icon: <MdOutlineExplore />, label: "Explore" },
-    { to: "/reels", icon: <FaPlay />, label: "Reels" },
+    { to: "/reels", icon: <PiVideoDuotone />, label: "Reels" },
     { to: "/messages", icon: <BsFillSendFill />, label: "Messages" },
     { to: "/notifications", icon: <FaRegHeart />, label: "Notifications" },
     { to: "/create", icon: <VscDiffAdded />, label: "Create" },

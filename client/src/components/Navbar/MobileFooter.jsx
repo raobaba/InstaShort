@@ -7,13 +7,13 @@ import { BsFillSendFill } from "react-icons/bs";
 import { VscDiffAdded } from "react-icons/vsc";
 import { CgProfile } from "react-icons/cg";
 import { FiMenu } from "react-icons/fi";
-import { FaPlay } from "react-icons/fa";
+import { PiVideoDuotone } from "react-icons/pi";
 
 function MobileFooter() {
   const navigationItems = [
     { to: "/", icon: <GrHomeRounded /> },
     { to: "/explore", icon: <MdOutlineExplore /> },
-    { to: "/reels", icon: <FaPlay /> },
+    { to: "/reels", icon: <PiVideoDuotone /> },
     { to: "/messages", icon: <BsFillSendFill /> },
     { to: "/create", icon: <VscDiffAdded /> },
     { to: "/profile", icon: <CgProfile /> },

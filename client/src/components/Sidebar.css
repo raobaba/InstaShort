@@ -31,15 +31,15 @@
   margin-right: 35px;
 }
 .sidebar-icon {
-  font-size: 22px; /* Initial font size */
+  font-size: 22px; 
 }
 .sidebar-item.active .sidebar-icon,
 .sidebar-item:hover .sidebar-icon {
-  font-size: 24px; /* Updated font size */
+  font-size: 24px; 
 }
 .sidebar-item svg {
   margin-right: 15px;
-  font-size: 23px; /* Initial font size */
+  font-size: 23px; 
   width: 20px;
   transition: all 0.3s ease-in-out;
 }

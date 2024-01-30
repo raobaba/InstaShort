@@ -12,6 +12,7 @@
 .routing-container {
   width: 82.5%;
   border: 1px solid white;
+  height: 97vh;
 }
 
 .mobile{
@@ -22,7 +23,7 @@
     display: none;
   }
   .routing{
-    height: 88vh;
+    height: 85vh;
     border: 1px solid white;
   }
   .mobile{

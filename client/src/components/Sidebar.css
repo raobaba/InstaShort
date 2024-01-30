@@ -7,11 +7,17 @@
   flex-direction: column;
 }
 
+.logo-contain{
+  text-decoration: none;
+}
+
 .logo {
-    font-family: "Satisfy", cursive;
-    color: white;
-    margin-bottom: 50px;
-  }
+  font-family: "Satisfy", cursive;
+  color: white;
+  font-size: xx-large;
+  text-decoration: none;
+  margin-bottom: 50px;
+}
 
 .sidebar-item {
   margin-bottom: 15px;
@@ -26,8 +32,6 @@
   margin-right: 35px;
 }
 
-
-
 .sidebar-item svg {
   margin-right: 10px;
   font-size: 20px;
@@ -39,19 +43,34 @@
   background-color: #555;
 }
 
+.sidebar-item.active {
+  font-weight: 700;
+}
+
+.sidebar-item.active .sidebar-icon {
+  font-size: 21px;
+  font-weight: 800;
+  color: #fff;
+}
+
+.sidebar-item.active span {
+  font-weight: 600;
+}
+
+
 .sidebar-item:hover svg {
   font-size: 21px;
 }
 
 .sidebar-item span {
-  margin-top: 5px;
-  font-size: 14px;
+  font-size: 16px;
   transition: all 0.3s ease-in-out;
+  font-family: "BlinkMacSystemFont", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 .sidebar-item:hover span {
-
   background-color: #555;
+
 }
 
 .sidebar-item:hover .sidebar-icon {

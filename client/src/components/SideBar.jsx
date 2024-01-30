@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./Sidebar.css";
-import InstaShort from '../assets/InstaShort.png'
+import InstaShort from "../assets/InstaShort.png";
 import { GrHomeRounded } from "react-icons/gr";
 import { BsSearch } from "react-icons/bs";
 import { MdOutlineExplore } from "react-icons/md";
@@ -13,48 +13,43 @@ import { FiMenu } from "react-icons/fi";
 import { FaPlay } from "react-icons/fa";
 
 function SideBar() {
+  const navigationItems = [
+    { to: "/", icon: <GrHomeRounded />, label: "Home" },
+    { to: "/search", icon: <BsSearch />, label: "Search" },
+    { to: "/explore", icon: <MdOutlineExplore />, label: "Explore" },
+    { to: "/reels", icon: <FaPlay />, label: "Reels" },
+    { to: "/messages", icon: <BsFillSendFill />, label: "Messages" },
+    { to: "/notifications", icon: <FaRegHeart />, label: "Notifications" },
+    { to: "/create", icon: <VscDiffAdded />, label: "Create" },
+    { to: "/profile", icon: <CgProfile />, label: "Profile" },
+    { to: "/more", icon: <FiMenu />, label: "More" },
+  ];
+
   return (
     <div className="sidebar">
-       <NavLink to="/" className='logo-contain'>
-        <img src={InstaShort} className="instaShort" alt="instashort-logo" width={25} height={25} />
+      <NavLink to="/" className="logo-contain">
+        <img
+          src={InstaShort}
+          className="instaShort"
+          alt="instashort-logo"
+          width={25}
+          height={25}
+        />
         <h2 className="logo">InstaShort</h2>
       </NavLink>
-      <NavLink to="/" className="sidebar-item" activeClassName="active">
-        <GrHomeRounded className="sidebar-icon" />
-        <span>Home</span>
-      </NavLink>
-      <NavLink to="/search" className="sidebar-item" activeClassName="active">
-        <BsSearch className="sidebar-icon" />
-        <span>Search</span>
-      </NavLink>
-      <NavLink to="/explore" className="sidebar-item" activeClassName="active">
-        <MdOutlineExplore className="sidebar-icon" />
-        <span>Explore</span>
-      </NavLink>
-      <NavLink to="/reels" className="sidebar-item" activeClassName="active">
-        <FaPlay className="sidebar-icon" />
-        <span>Reels</span>
-      </NavLink>
-      <NavLink to="/messages" className="sidebar-item" activeClassName="active">
-        <BsFillSendFill className="sidebar-icon" />
-        <span>Messages</span>
-      </NavLink>
-      <NavLink to="/notifications" className="sidebar-item" activeClassName="active">
-        <FaRegHeart className="sidebar-icon" />
-        <span>Notifications</span>
-      </NavLink>
-      <NavLink to="/create" className="sidebar-item" activeClassName="active">
-        <VscDiffAdded className="sidebar-icon" />
-        <span>Create</span>
-      </NavLink>
-      <NavLink to="/profile" className="sidebar-item" activeClassName="active">
-        <CgProfile className="sidebar-icon" />
-        <span>Profile</span>
-      </NavLink>
-      <NavLink to="/more" className="sidebar-item" activeClassName="active">
-        <FiMenu className="sidebar-icon" />
-        <span>More</span>
-      </NavLink>
+
+      {navigationItems.map((item, index) => (
+        <NavLink
+          key={index}
+          to={item.to}
+          className="sidebar-item"
+          activeClassName="active"
+        >
+          {item.icon &&
+            React.cloneElement(item.icon, { className: "sidebar-icon" })}
+          <span>{item.label}</span>
+        </NavLink>
+      ))}
     </div>
   );
 }

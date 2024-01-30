@@ -101,3 +101,9 @@
     margin-left: 6px;
   }
 }
+
+@media (max-width:567px){
+  .sidebar {
+    display: none;
+  }
+}

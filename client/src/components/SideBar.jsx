@@ -16,7 +16,7 @@ import { FaPlay } from "react-icons/fa";
 function SideBar() {
   return (
     <div className="sidebar">
-       <NavLink className='logo-contain'>
+       <NavLink to="/" className='logo-contain'>
         <h2 className="logo">InstaShort</h2>
       </NavLink>
       <NavLink to="/" className="sidebar-item" activeClassName="active">

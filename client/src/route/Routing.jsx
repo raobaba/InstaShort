@@ -1,6 +1,5 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "../components/Home/Home.jsx";
-import Search from "../components/Search/Search.jsx";
 import Explore from "../components/Explore/Explore.jsx";
 import Reels from "../components/Reels/Reels.jsx";
 import Messages from "../components/Messages/Messages.jsx";
@@ -13,7 +12,6 @@ const Routing = () => {
     <>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/search" element={<Search />} />
         <Route path="/explore" element={<Explore />} />
         <Route path="/reels" element={<Reels />} />
         <Route path="/messages" element={<Messages />} />

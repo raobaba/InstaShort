@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { NavLink } from "react-router-dom";
 import "./Sidebar.css";
 import InstaShort from "../assets/InstaShort.png";
@@ -11,11 +11,20 @@ import { VscDiffAdded } from "react-icons/vsc";
 import { CgProfile } from "react-icons/cg";
 import { FiMenu } from "react-icons/fi";
 import { PiVideoDuotone } from "react-icons/pi";
-
+import SearchModal from "./Search/SearchModal";
 function SideBar() {
+
+  const [isSearchModalOpen, setIsSearchModalOpen] = useState(false);
+  const openSearchModal = () => {
+    setIsSearchModalOpen(true);
+  };
+
+  const closeSearchModal = () => {
+    setIsSearchModalOpen(false);
+  };
   const navigationItems = [
     { to: "/", icon: <GrHomeRounded />, label: "Home" },
-    { to: "/search", icon: <BsSearch />, label: "Search" },
+    { to:"/", icon: <BsSearch className="sidebar-icon" />, label: "Search", onClick: openSearchModal },
     { to: "/explore", icon: <MdOutlineExplore />, label: "Explore" },
     { to: "/reels", icon: <PiVideoDuotone />, label: "Reels" },
     { to: "/messages", icon: <BsFillSendFill />, label: "Messages" },
@@ -24,6 +33,8 @@ function SideBar() {
     { to: "/profile", icon: <CgProfile />, label: "Profile" },
     { to: "/more", icon: <FiMenu />, label: "More" },
   ];
+
+ 
 
   return (
     <div className="sidebar">
@@ -44,12 +55,14 @@ function SideBar() {
           to={item.to}
           className="sidebar-item"
           activeClassName="active"
+          onClick={item.onClick || (() => {})}
         >
           {item.icon &&
             React.cloneElement(item.icon, { className: "sidebar-icon" })}
           <span>{item.label}</span>
         </NavLink>
       ))}
+      {isSearchModalOpen && <SearchModal onClose={closeSearchModal} />}
     </div>
   );
 }

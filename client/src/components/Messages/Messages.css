@@ -1,0 +1,17 @@
+.messages{
+    display: flex;
+    width: 99%;
+    height: 97vh;
+    border: 1px solid white;
+}
+
+.friend-list-container{
+    width: 35%;
+    height: 100%;
+    border: 1px solid red;
+}
+.friend-detail-container{
+    width: 65%;
+    height: 100%;
+    border: 1px solid red;
+}

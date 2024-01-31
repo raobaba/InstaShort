@@ -1,8 +1,11 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./SearchModal.css";
+import { FaSearch } from "react-icons/fa";
+import { TiDeleteOutline } from "react-icons/ti";
 
 const SearchModal = ({ onClose }) => {
   const [searchText, setSearchText] = useState("");
+  const [isSearchMode, setIsSearchMode] = useState(true);
   const modalRef = useRef();
 
   useEffect(() => {
@@ -11,34 +14,48 @@ const SearchModal = ({ onClose }) => {
         onClose();
       }
     };
-
     document.addEventListener("mousedown", handleClickOutside);
-
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [onClose]);
 
   const handleSearch = () => {
-    // Add your search functionality here
     console.log("Searching for:", searchText);
-    // You can implement your search logic and update the UI accordingly
+  };
+
+
+  const handleToggleMode = () => {
+    setIsSearchMode(!isSearchMode);
+    if (!isSearchMode) {
+      setSearchText("");
+    }
   };
 
   return (
+    <div className="search-modal-overlay">
     <div className="search-modal" ref={modalRef}>
-      <h3>Search Text</h3>
-      <input
-        type="text"
-        placeholder="Search..."
-        value={searchText}
-        onChange={(e) => setSearchText(e.target.value)}
-      />
-      <button onClick={handleSearch}>Search</button>
-      {/* Display search content area */}
-      {/* Add your search results rendering here */}
-      <div className="search-results">Search results go here</div>
+      <div className="search-content">
+        <h3>Search Here</h3>
+        <input
+          type="text"
+          placeholder="Search..."
+          value={searchText}
+          style={{ width: '80%', marginLeft: '35px', marginTop: '5%' }}
+          onChange={(e) => setSearchText(e.target.value)}
+        />
+        <FaSearch className="search-icon-button" onClick={handleSearch} />
+        <div className="search-results">
+          <div className="recent-content">
+            <h3>recent</h3>
+          </div>
+          <div className="content">
+            <p>no recent searches</p>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
   );
 };
 

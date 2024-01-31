@@ -1,5 +1,6 @@
 import React from 'react';
 import './Suggestions.css';
+import { Link } from 'react-router-dom';
 
 function Suggestions() {
   return (
@@ -36,6 +37,20 @@ function Suggestions() {
           <button>Follow</button>
         </div>
       </div>
+      <div className='suggestion-footer'>
+           <Link>About</Link>
+           <Link>Help</Link>
+           <Link>Press</Link>
+           <Link>API</Link>
+           <Link>Jobs</Link>
+           <Link>Privacy</Link>
+           <Link>Terms</Link>
+           <br />
+           <Link>Location</Link>
+           <Link>Language</Link>
+           <Link>Meta Varified</Link>
+           <h6>© 2024 INSTAGRAM FROM META</h6>
+        </div>
     </div>
   );
 }

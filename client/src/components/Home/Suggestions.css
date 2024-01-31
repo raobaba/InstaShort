@@ -24,10 +24,10 @@
   margin-right: 10px;
 }
 
-.user-profile-circle img{
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
+.user-profile-circle img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
 }
 
 .name-username > p,
@@ -53,11 +53,33 @@
   color: #fff;
 }
 
+
 .suggested-text {
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
 }
+
+.suggestion-footer {
+    margin-top: 80px;
+  }
+  
+  .suggestion-footer a {
+    color: white ; 
+    margin-right: 10px; 
+    font-size: 14px;
+    text-decoration: none;
+    color: rgb(196, 186, 186);
+  }
+  .suggestion-footer a:hover {
+     text-decoration: underline;
+  }
+  
+  .suggestion-footer h6 {
+    margin-top: 30px;
+    color: rgb(196, 186, 186);
+  }
+  
 
 @media (max-width: 768px) {
   .user-profile,

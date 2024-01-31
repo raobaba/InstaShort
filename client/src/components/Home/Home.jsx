@@ -3,6 +3,7 @@ import "./Home.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import Suggestions from "./Suggestions";
 
 function Home() {
   const userStatus = [
@@ -67,7 +68,7 @@ function Home() {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           slidesToScroll: 1,
         },
       },
@@ -102,7 +103,7 @@ function Home() {
         <div className="home-item">HomeRa</div>
       </div>
       <div className="suggestion-container">
-        <div>Suggestions</div>
+        <div><Suggestions/></div>
       </div>
     </div>
   );

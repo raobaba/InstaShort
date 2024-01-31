@@ -73,7 +73,6 @@
 .sidebar-item span {
   font-size: 18px;
   transition: all 0.3s ease-in-out;
-  font-family: "BlinkMacSystemFont", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 .sidebar-item:hover span {

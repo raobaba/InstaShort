@@ -3,5 +3,7 @@
   padding: 0%;
   background-color: #242424;
 }
-
+body {
+  font-family: "BlinkMacSystemFont", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
 

@@ -8,14 +8,16 @@
 
 .sidebar-container {
   width: 17.5%;
- 
   height: 100vh;
-
 }
 .routing-container {
   width: 82.5%;
-  height: 97vh;
-  overflow-y: auto; /* Enable vertical scrolling for the routing container */
+  height: auto;
+  overflow-y: auto; 
+}
+
+.routing-container::-webkit-scrollbar {
+  display: none;
 }
 
 .mobile{
@@ -26,8 +28,11 @@
     display: none;
   }
   .routing{
-    height: 85vh;
-    border: 1px solid white;
+    height: 90vh;
+    overflow-y: auto; 
+  }
+  .routing::-webkit-scrollbar {
+    display: none;
   }
   .mobile{
     display: block;

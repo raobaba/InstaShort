@@ -2,16 +2,19 @@
     display: flex;
     width: 99%;
     height: 97vh;
-    border: 1px solid white;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+    rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
 }
 
 .friend-list-container{
     width: 35%;
     height: 100%;
-    border: 1px solid red;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+    rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
 }
 .friend-detail-container{
     width: 65%;
     height: 100%;
-    border: 1px solid red;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+    rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
 }

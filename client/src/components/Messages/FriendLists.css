@@ -1,0 +1,79 @@
+.friend-list {
+    width: 100%;
+    height: auto;
+    border: 1px solid grey;
+    border-bottom: none;
+    border-top: none;
+    border-right: none;
+  }
+  
+  .user-info {
+    display: flex;
+   justify-content: space-between;
+    margin: 7%;
+  }
+  
+  .username {
+   cursor: pointer;
+   font-weight: 400;
+  }
+  
+  .icon {
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .user-details {
+   display: flex;
+   justify-content: space-between;
+    margin: 7%;
+  }
+  .user-details h3{
+    font-weight: 300;
+    font-size: 15px;
+  }
+  .user-details p{
+    font-weight: 300;
+    color: rgb(196, 186, 186);
+  }
+  
+  .user-activity {
+    display: flex;
+    margin: 7%;
+  }
+
+  .activity-details:hover,.user-activity:hover{
+    background-color: darkslateblue;
+  }
+
+  .user-information{
+    display: flex;
+  }
+
+  .user-profile-circle{
+    cursor: pointer;
+    display: flex;
+  }
+  
+  .user-profile-circle img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  
+  .activity-details ,
+  
+  .user-name {
+    font-weight: 300;
+    font-size: 14px;
+  }
+
+  .activity-details{
+    cursor: pointer;
+  }
+  
+  .attachment-info {
+    font-weight: 300;
+    font-size: 12px;
+  }
+  

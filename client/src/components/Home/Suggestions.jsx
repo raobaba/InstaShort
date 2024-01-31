@@ -6,9 +6,11 @@ function Suggestions() {
     <div className='suggestions-container'>
       <div className='user-profile'>
         <div className='profile-info'>
-          <div className='user-profile-circle'></div>
+          <div className='user-profile-circle'>
+            <img src="https://avatars.githubusercontent.com/u/99542983?v=4" alt="" />
+          </div>
           <div className='name-username'>
-            <h4>UserName</h4>
+            <h5>UserName</h5>
             <p>Name</p>
           </div>
         </div>
@@ -22,9 +24,11 @@ function Suggestions() {
       </div>
       <div className='suggested-profile'>
         <div className='profile-info'>
-          <div className='user-profile-circle'></div>
+          <div className='user-profile-circle'>
+          <img src="https://avatars.githubusercontent.com/u/99542983?v=4" alt="" />
+          </div>
           <div className='suggested-for-you'>
-            <h4>UserName</h4>
+            <h5>UserName</h5>
             <p>Suggested for you</p>
           </div>
         </div>

@@ -1,6 +1,6 @@
 .suggestions-container {
   margin-top: 10%;
-  gap: 50px;
+  margin-left: 80px;
 }
 
 .user-profile,
@@ -24,9 +24,16 @@
   margin-right: 10px;
 }
 
+.user-profile-circle img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
 .name-username > p,
 .suggested-for-you > p {
   font-size: 14px;
+  color: rgb(196, 186, 186);
 }
 
 .switch-button > button,
@@ -37,11 +44,19 @@
   padding: 10px 15px;
   cursor: pointer;
   border-radius: 5px;
+  color: darkcyan;
+}
+
+.switch-button > button:hover,
+.follow-button > button:hover,
+.suggested-text > button:hover {
+  color: #fff;
 }
 
 .suggested-text {
   display: flex;
   justify-content: space-between;
+  margin-top: 40px;
 }
 
 @media (max-width: 768px) {

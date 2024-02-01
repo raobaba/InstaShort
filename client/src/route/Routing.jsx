@@ -3,7 +3,7 @@ import Home from "../components/Home/Home.jsx";
 import Explore from "../components/Explore/Explore.jsx";
 import Reels from "../components/Reels/Reels.jsx";
 import Messages from "../components/Messages/Messages.jsx";
-import Create from "../components/Create/Create.jsx";
+import Create from "../components/Create/CreateModal.jsx";
 import Profile from "../components/Profile/Profile.jsx";
 import More from "../components/More/More.jsx";
 const Routing = () => {

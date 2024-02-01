@@ -13,9 +13,17 @@ import { FiMenu } from "react-icons/fi";
 import { PiVideoDuotone } from "react-icons/pi";
 import SearchModal from "./Search/SearchModal";
 import NotificationModal from "./Notifications/NotificationModal";
+import CreateModal from "./Create/CreateModal";
 function SideBar() {
   const [isSearchModalOpen, setIsSearchModalOpen] = useState(false);
   const [isNotificationModalOpen,setIsNotificationModalOpen] = useState(false);
+  const [isCreateModalOpen,setIsCreateModalOpen] = useState(false);
+  const openCreateModal = ()=>{
+    setIsCreateModalOpen(true);
+  }
+  const closeCreateModal = ()=>{
+    setIsCreateModalOpen(false)
+  }
   const openNotificationModal = ()=>{
     setIsNotificationModalOpen(true);
   }
@@ -46,7 +54,7 @@ function SideBar() {
       label: "Notifications",
       onClick: openNotificationModal,
     },
-    { to: "/create", icon: <VscDiffAdded />, label: "Create" },
+    { icon: <VscDiffAdded />, label: "Create",onClick: openCreateModal },
     { to: "/profile", icon: <CgProfile />, label: "Profile" },
     { to: "/more", icon: <FiMenu />, label: "More" },
   ];
@@ -77,6 +85,7 @@ function SideBar() {
           <span>{item.label}</span>
         </NavLink>
       ))}
+      {isCreateModalOpen && <CreateModal onClose={closeCreateModal} />}
       {isNotificationModalOpen && <NotificationModal onClose={closeNotificationModal} />}
       {isSearchModalOpen && <SearchModal onClose={closeSearchModal} />}
     </div>

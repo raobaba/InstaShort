@@ -1,0 +1,57 @@
+.friend-details-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Set the container height to the full viewport height */
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+    rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+  }
+  
+  .content-wrapper {
+    text-align: center;
+  }
+  
+  .message-circle {
+    background-color: #f0f0f0; /* Set your desired background color */
+    margin-left: 40%;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 20px;
+    display: flex;
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+    background-color: #000000;
+    border: 2px solid white;
+  }
+
+  .messenger-icon{
+    margin-left: 11px;
+    background-color: #000000;
+    font-size: 50px;
+  }
+  
+  .details-text {
+    margin-bottom: 20px;
+    font-weight: 300;
+  }
+
+  .details-text p{
+    font-size: 14px;
+    color: #b1a4a4;
+  }
+  
+  .send-button {
+    margin-bottom: 20px;
+
+  }
+
+  .send-button button{
+    color: #FFFFFF;
+    background-color:#1877F2;
+    width: 110px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }

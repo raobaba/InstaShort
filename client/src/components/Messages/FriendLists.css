@@ -1,79 +1,120 @@
 .friend-list {
-    width: 100%;
-    height: auto;
-    border: 1px solid grey;
-    border-bottom: none;
-    border-top: none;
-    border-right: none;
-  }
-  
-  .user-info {
-    display: flex;
-   justify-content: space-between;
-    margin: 7%;
-  }
-  
-  .username {
-   cursor: pointer;
-   font-weight: 400;
-  }
-  
-  .icon {
-    cursor: pointer;
-    font-size: 20px;
-  }
-  
-  .user-details {
-   display: flex;
-   justify-content: space-between;
-    margin: 7%;
-  }
-  .user-details h3{
-    font-weight: 300;
-    font-size: 15px;
-  }
-  .user-details p{
-    font-weight: 300;
-    color: rgb(196, 186, 186);
-  }
-  
-  .user-activity {
-    display: flex;
-    margin: 7%;
-  }
+  width: 100%;
+  height: auto;
+  border: 1px solid grey;
+  border-bottom: none;
+  border-top: none;
+  border-right: none;
+}
 
-  .activity-details:hover,.user-activity:hover{
-    background-color: darkslateblue;
-  }
+.user-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 7%;
+  position: sticky
+}
 
-  .user-information{
-    display: flex;
-  }
+.username {
+  cursor: pointer;
+  font-weight: 400;
+}
 
-  .user-profile-circle{
-    cursor: pointer;
-    display: flex;
-  }
-  
-  .user-profile-circle img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-  }
-  
-  .activity-details ,
-  
-  .user-name {
-    font-weight: 300;
-    font-size: 14px;
-  }
+.icon {
+  cursor: pointer;
+  font-size: 20px;
+}
 
-  .activity-details{
-    cursor: pointer;
+.user-details {
+  display: flex;
+  justify-content: space-between;
+  margin: 7%;
+}
+.user-details h3 {
+  font-weight: 300;
+  font-size: 15px;
+}
+.user-details p {
+  font-weight: 300;
+  color: rgb(196, 186, 186);
+}
+
+.user-activity {
+  display: flex;
+  margin: 7%;
+  overflow-y: auto; 
+  max-height: 100px; 
+  border-radius: 5px; 
+}
+.user-activity::-webkit-scrollbar {
+  width: 8px;
+}
+
+.user-activity::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 5px;
+}
+
+.user-activity:hover,
+.activity-details:hover,
+.user-name:hover,
+.attachment-info:hover {
+  background-color: #555;
+  border-radius: 10px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  cursor: pointer;
+}
+
+.user-activity:hover > .activity-details,
+.user-activity:hover > .activity-details .user-name,
+.user-activity:hover > .activity-details .attachment-info {
+  background-color: #555;
+  cursor: pointer;
+}
+
+.user-information {
+  display: flex;
+}
+
+.user-profile-circle {
+  cursor: pointer;
+  display: flex;
+}
+
+.user-profile-circle img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.activity-details,
+.user-name {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.activity-details {
+  cursor: pointer;
+}
+
+.attachment-info {
+  font-weight: 300;
+  font-size: 12px;
+}
+
+@media (max-width: 767px) {
+  .activity-details {
+    display: none;
   }
-  
-  .attachment-info {
-    font-weight: 300;
-    font-size: 12px;
+  .username{
+    display: none;
   }
-  
+  .user-details{
+    display: none;
+  }
+  .icon{
+    font-size: 30px;
+    margin-left: 10px;
+    color: #fff;
+  }
+}

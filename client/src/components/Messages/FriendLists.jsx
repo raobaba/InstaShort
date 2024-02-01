@@ -87,20 +87,17 @@ function FriendLists() {
         <p>Requests</p>
       </div>
       <>
-      {userInfo.map((user) => (
-        <div className="user-activity">
-          <div className="user-profile-circle">
-            <img
-              src={user.imageUrl}
-              alt=""
-            />
+        {userInfo.map((user) => (
+          <div className="user-activity">
+            <div className="user-profile-circle">
+              <img src={user.imageUrl} alt="" />
+            </div>
+            <div className="activity-details">
+              <div className="user-name">{user.name}</div>
+              <div className="attachment-info">{user.attachmentInfo}</div>
+            </div>
           </div>
-          <div className="activity-details">
-            <div className="user-name">{user.name}</div>
-            <div className="attachment-info">{user.attachmentInfo}</div>
-          </div>
-        </div>
-           ))}
+        ))}
       </>
     </div>
   );

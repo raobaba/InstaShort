@@ -41,7 +41,7 @@
 .user-activity {
   display: flex;
   margin: 7%;
-  overflow-y: auto; 
+  overflow-y: auto;
   max-height: 100px; 
   border-radius: 5px; 
 }

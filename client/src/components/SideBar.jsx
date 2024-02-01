@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Sidebar.css";
 import InstaShort from "../assets/InstaShort.png";
@@ -12,9 +12,16 @@ import { CgProfile } from "react-icons/cg";
 import { FiMenu } from "react-icons/fi";
 import { PiVideoDuotone } from "react-icons/pi";
 import SearchModal from "./Search/SearchModal";
+import NotificationModal from "./Notifications/NotificationModal";
 function SideBar() {
-
   const [isSearchModalOpen, setIsSearchModalOpen] = useState(false);
+  const [isNotificationModalOpen,setIsNotificationModalOpen] = useState(false);
+  const openNotificationModal = ()=>{
+    setIsNotificationModalOpen(true);
+  }
+  const closeNotificationModal = ()=>{
+    setIsNotificationModalOpen(false);
+  }
   const openSearchModal = () => {
     setIsSearchModalOpen(true);
   };
@@ -24,17 +31,25 @@ function SideBar() {
   };
   const navigationItems = [
     { to: "/", icon: <GrHomeRounded />, label: "Home" },
-    { to:"/", icon: <BsSearch className="sidebar-icon" />, label: "Search", onClick: openSearchModal },
+    {
+      to: "/",
+      icon: <BsSearch className="sidebar-icon" />,
+      label: "Search",
+      onClick: openSearchModal,
+    },
     { to: "/explore", icon: <MdOutlineExplore />, label: "Explore" },
     { to: "/reels", icon: <PiVideoDuotone />, label: "Reels" },
     { to: "/messages", icon: <BsFillSendFill />, label: "Messages" },
-    { to: "/notifications", icon: <FaRegHeart />, label: "Notifications" },
+    {
+      to: "/",
+      icon: <FaRegHeart />,
+      label: "Notifications",
+      onClick: openNotificationModal,
+    },
     { to: "/create", icon: <VscDiffAdded />, label: "Create" },
     { to: "/profile", icon: <CgProfile />, label: "Profile" },
     { to: "/more", icon: <FiMenu />, label: "More" },
   ];
-
- 
 
   return (
     <div className="sidebar">
@@ -62,6 +77,7 @@ function SideBar() {
           <span>{item.label}</span>
         </NavLink>
       ))}
+      {isNotificationModalOpen && <NotificationModal onClose={closeNotificationModal} />}
       {isSearchModalOpen && <SearchModal onClose={closeSearchModal} />}
     </div>
   );

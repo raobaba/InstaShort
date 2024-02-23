@@ -1,12 +1,22 @@
-import './App.css';
+import { Routes, Route } from "react-router-dom";
+import SignIn from "./components/authentication/auth/SignIn";
+import SignUp from "./components/authentication/auth/SignUp";
+import AuthLayout from "./components/authentication/AuthLayout";
 
 function App() {
   return (
-    <div className="App">
-       <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-    </div>
+    <main className="flex h-screen w-full">
+    <Routes>
+      {/* public routes */}
+      <Route element={<AuthLayout/>}>
+        <Route path="/sign-in" element={<SignIn />} />
+        <Route path="/sign-up" element={<SignUp />} />
+      </Route>
+
+      {/* private routes */}
+
+    </Routes>
+  </main>
   );
 }
 

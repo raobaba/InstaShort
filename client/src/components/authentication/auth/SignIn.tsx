@@ -8,8 +8,8 @@ const SignIn: React.FC = () => {
     <>
       <MetaData title={'InstaShort | Sign-In'} />
       <div className="h-screen w-screen flex items-center justify-center">
-        <div className="w-1/3 h-5/6 justify-center rounded-xl max-h-full border shadow-md">
-        <img src={Logo} alt="" className="w-8 h-8 rounded-full" />
+        <div className="w-5/6 lg:w-1/3 md:w-2/3 h-full rounded-xl max-h-full border shadow-md flex flex-col items-center">
+          <img src={Logo} alt="" className="w-8 h-8 rounded-full mb-4" />
           <Link to={'/sign-up'}>SignIn</Link>
         </div>
       </div>

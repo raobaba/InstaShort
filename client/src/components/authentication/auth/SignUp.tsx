@@ -16,12 +16,12 @@ const SignUp: React.FC = () => {
             Create a new account
           </h2>
           <form className="w-full mt-4 flex flex-col items-center">
-            <div className="mb-2 w-full flex flex-col items-center">
+            <div className="mb-3 w-full flex flex-col items-center">
               <label
                 htmlFor="name"
                 className="block text-xs text-gray-300 font-medium text-light-2 text-left w-5/6"
               >
-                NAME <span className="text-red-500 text-sm">*</span>
+                Name <span className="text-red-500 text-sm">*</span>
               </label>
               <input
                 type="text"
@@ -37,7 +37,7 @@ const SignUp: React.FC = () => {
                 htmlFor="username"
                 className="block text-xs text-gray-300 font-medium text-light-2 text-left w-5/6"
               >
-                UserName <span className="text-red-500 text-sm">*</span>
+                Username <span className="text-red-500 text-sm">*</span>
               </label>
               <input
                 type="text"

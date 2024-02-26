@@ -99,9 +99,7 @@
     }
   
     .custom-scrollbar::-webkit-scrollbar {
-      width: 3px;
-      height: 3px;
-      border-radius: 2px;
+      display: none;
     }
   
     .custom-scrollbar::-webkit-scrollbar-track {
@@ -118,7 +116,7 @@
     }
   
     .common-container {
-      @apply flex flex-col w-full sm:w-2/3 items-center gap-10 overflow-scroll py-5 px-5 md:px-8 lg:p-8 custom-scrollbar;
+      @apply flex flex-col w-full items-center gap-10 overflow-scroll py-5 px-5 md:px-8 lg:p-8 custom-scrollbar;
     }
     /* All Users */
     .user-container {
@@ -196,7 +194,7 @@
   
     /* Bottom bar */
     .bottom-bar {
-      @apply z-50 flex-between w-full sticky bottom-0 rounded-t-[20px] bg-slate-800 px-5 py-4 md:hidden;
+      @apply z-50 flex-between w-full sticky bottom-0 rounded-t-[20px] bg-dark-2 px-5 py-4 md:hidden;
     }
   
     /* File uploader */
@@ -227,7 +225,7 @@
   
     /* Left sidebar */
     .leftsidebar {
-      @apply hidden md:flex px-6 py-1 flex-col justify-between min-w-[270px] bg-slate-800;
+      @apply hidden md:flex px-6 py-1 flex-col justify-between min-w-[270px] bg-dark-2;
     }
   
     .leftsidebar-link {
@@ -245,7 +243,7 @@
   
     /* Topbar */
     .topbar {
-      @apply sticky top-0 z-50 md:hidden bg-slate-800 w-full;
+      @apply sticky top-0 z-50 md:hidden bg-dark-2 w-full;
     }
   
     /* User card */
@@ -266,11 +264,11 @@
     }
   
     .shad-input {
-      @apply h-12 bg-slate-800 border-none placeholder:text-light-4 focus-visible:ring-1 focus-visible:ring-offset-1 ring-offset-light-3 !important;
+      @apply h-12 bg-dark-2 border-none placeholder:text-light-4 focus-visible:ring-1 focus-visible:ring-offset-1 ring-offset-light-3 !important;
     }
   
     .shad-textarea {
-      @apply h-36 bg-slate-800 rounded-xl border-none focus-visible:ring-1 focus-visible:ring-offset-1 ring-offset-light-3 !important;
+      @apply h-36 bg-dark-2 rounded-xl border-none focus-visible:ring-1 focus-visible:ring-offset-1 ring-offset-light-3 !important;
     }
   
     /* Button */
@@ -279,7 +277,7 @@
     }
   
     .shad-button_dark_4 {
-      @apply h-11 bg-slate-800 px-4 text-light-1 flex gap-2 !important;
+      @apply h-11 bg-dark-2 px-4 text-light-1 flex gap-2 !important;
     }
   
     .shad-button_ghost {

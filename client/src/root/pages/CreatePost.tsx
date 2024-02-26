@@ -20,7 +20,7 @@ function CreatePost() {
   return (
     <>
       <MetaData title={"InstaShort | CreatePost"} />
-      <div className="flex flex-1">
+      <div className="mt-[-50px] flex flex-1">
         <div className="common-container">
           <div className="max-w-6xl py-10 px-5 flex-start gap-3 justify-start w-full">
             <img src={Post} width={36} height={36} alt="add" />
@@ -28,7 +28,7 @@ function CreatePost() {
           </div>
           <form
             action=""
-            className="max-w-full w-11/12 transparent rounded-md shadow-md"
+            className="max-w-full w-11/12 mt-[-50px] transparent rounded-md shadow-md"
           >
             <div>
               <label
@@ -43,7 +43,7 @@ function CreatePost() {
                 rows={4}
                 value={caption}
                 onChange={handleCaptionChange}
-                className="p-2 block w-full border bg-slate-800 rounded-md focus:outline-none focus:ring-blue-500 border-blue-500 focus:border-blue-500 sm:text-sm"
+                className="p-2 block w-full border bg-dark-2 rounded-md focus:outline-none focus:ring-blue-500 border-blue-500 focus:border-blue-500 sm:text-sm"
               ></textarea>
             </div>
             <div>
@@ -69,7 +69,7 @@ function CreatePost() {
             <div className="flex flex-col">
               <label
                 htmlFor="tags"
-                className="block text-sm font-medium text-gray-300"
+                className="block  text-sm font-medium text-gray-300"
               >
                 Add Tags (separated by comma " , ")
               </label>

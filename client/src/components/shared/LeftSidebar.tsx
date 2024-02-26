@@ -2,9 +2,7 @@ import React from "react";
 import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import { sidebarLinks } from "../../constants/index";
 import LogOut from "../../assets/icons/logout.svg";
-import Loader from "./Loader";
 import { INavLink } from "../../types/index";
-import Placeholder from "../../assets/icons/profile-placeholder.svg";
 import Logo from "../../assets/images/logo.png";
 
 function LeftSidebar() {
@@ -25,25 +23,6 @@ function LeftSidebar() {
           />
           <p className="text-gray-300 font-semibold">InstaShort</p>
         </Link>
-
-        {isLoading || !user.email ? (
-          <div className="h-14">
-            <Loader />
-          </div>
-        ) : (
-          <Link to={`/profile/${1}`} className="flex gap-3 items-center">
-            <img
-              src={Placeholder}
-              alt="profile"
-              className="h-14 w-14 rounded-full"
-            />
-            <div className="flex flex-col">
-              <p className="body-bold">{"Rajan Kumar"}</p>
-              <p className="small-regular text-light-3">@{"rajanrao"}</p>
-            </div>
-          </Link>
-        )}
-
         <ul className="flex flex-col gap-2">
           {sidebarLinks.map((link: INavLink) => {
             const isActive = pathname === link.route;

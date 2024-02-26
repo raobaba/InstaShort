@@ -14,7 +14,7 @@ function Topbar() {
             alt="logo"
             width={25}
             height={25}
-            className="rounded-2xl"
+            className="rounded-2xl mg-10"
           />
           <p className="text-gray-300 font-semibold">InstaShort</p>
         </Link>

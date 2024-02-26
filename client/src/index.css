@@ -228,7 +228,7 @@
   
     /* Left sidebar */
     .leftsidebar {
-      @apply hidden md:flex px-6 py-2 flex-col justify-between min-w-[270px] bg-slate-800;
+      @apply hidden md:flex px-6 py-1 flex-col justify-between min-w-[270px] bg-slate-800;
     }
   
     .leftsidebar-link {

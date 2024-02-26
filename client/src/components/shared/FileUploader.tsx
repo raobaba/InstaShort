@@ -8,8 +8,6 @@ type FileUploaderProps = {
 };
 
 const convertFileToUrl = (file: FileWithPath): string => {
-  // Assuming you have the logic to convert a file to a URL here
-  // Replace this with your actual implementation
   return URL.createObjectURL(file);
 };
 
@@ -36,7 +34,7 @@ const FileUploader = ({ fieldChange, mediaUrl }: FileUploaderProps) => {
   return (
     <div
       {...getRootProps()}
-      className="flex flex-center flex-col bg-dark-3 rounded-xl cursor-pointer"
+      className="flex flex-center flex-col bg-slate-800 rounded-xl cursor-pointer"
     >
       <input {...getInputProps()} className="cursor-pointer" />
 
@@ -48,11 +46,11 @@ const FileUploader = ({ fieldChange, mediaUrl }: FileUploaderProps) => {
           <p className="file_uploader-label">Click or drag photo to replace</p>
         </>
       ) : (
-        <div className="file_uploader-box ">
+        <div className="file_uploader-box">
           <img
             src={FileUpload}
-            width={96}
-            height={77}
+            width={76}
+            height={57}
             alt="file upload"
           />
 

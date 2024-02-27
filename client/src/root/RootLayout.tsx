@@ -16,7 +16,7 @@ const RootLayout = () => {
       <section className="flex flex-1 h-full">
         <Outlet />
       </section>
-      <div className="lg:w-80 w-40 h-full px-10 py-5 bg-dark-2 hidden md:block">
+      <div className="lg:w-80 w-40 h-full px-10 py-5 bg-dark-2 hidden lg:block">
         {isLoading || !user.email ? (
           <div className="h-14">
             <Loader />

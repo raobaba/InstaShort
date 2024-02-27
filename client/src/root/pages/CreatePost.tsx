@@ -47,7 +47,10 @@ function CreatePost() {
               ></textarea>
             </div>
             <div className="mt-3">
-              <label htmlFor="file" className="block text-sm font-medium text-gray-300">
+              <label
+                htmlFor="file"
+                className="block text-sm font-medium text-gray-300"
+              >
                 Add Photos
               </label>
               <span className="shad-form_message"></span>

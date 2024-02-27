@@ -15,7 +15,10 @@ const ProfileLink = () => (
     <img src={Placeholder} alt="profile" className="h-14 w-14 rounded-full" />
     <div className="flex flex-col">
       <p className="body-bold">{"Rajan Kumar"}</p>
+      <div className="w-full justify-around flex">
       <p className="small-regular text-light-3">@{"rajanrao"}</p>
+       <p className="ml-10 lg:ml-5 small-regular text-light-3">New Delhi</p>
+      </div>
     </div>
   </Link>
 );
@@ -41,14 +44,14 @@ const Home = () => {
               ) : (
                 <ProfileLink />
               )}
-              <Link className="mr-10 mt-5" to={"/update-post"}>
+              <Link className="mr-10 mt-5" to={`/update-post/${1}`}>
                 <img src={Edit} alt="Edit_Logo" />
               </Link>
             </div>
             <div className="flex items-center justify-center">
               <div className="w-10/12 mt-3">
                 <p className="">Creating a nice project</p>
-                <p className="small-regular text-light-3">
+                <p className="small-regular text-blue-600 cursor-pointer">
                   #rajan #dhanjee #prakash
                 </p>
                 <div className="w-full mt-2">

@@ -46,14 +46,14 @@ function CreatePost() {
                 className="p-2 block w-full border bg-dark-2 rounded-md focus:outline-none focus:ring-blue-500 border-blue-500 focus:border-blue-500 sm:text-sm"
               ></textarea>
             </div>
-            <div>
+            <div className="mt-3">
               <label htmlFor="file" className="block text-sm font-medium text-gray-300">
                 Add Photos
               </label>
               <span className="shad-form_message"></span>
               <FileUploader fieldChange={handleFileChange} mediaUrl="" />
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col mt-3">
               <label
                 htmlFor="location"
                 className="block text-sm font-medium text-gray-300"
@@ -66,7 +66,7 @@ function CreatePost() {
                 className="shad-input rounded-lg"
               />
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col mt-3">
               <label
                 htmlFor="tags"
                 className="block  text-sm font-medium text-gray-300"

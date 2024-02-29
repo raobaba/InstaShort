@@ -6,6 +6,7 @@ import Bottombar from "../components/shared/Bottombar";
 import LeftSidebar from "../components/shared/LeftSidebar";
 import Placeholder from "../assets/icons/profile-placeholder.svg";
 import TopCreater from "../components/shared/TopCreater";
+import Notifications from "../components/shared/Notifications";
 
 const RootLayout = () => {
   const isLoading = false;
@@ -36,6 +37,9 @@ const RootLayout = () => {
             
           </Link>
         )}
+        <div className="w-full h-auto">
+          <Notifications/>
+        </div>
         <div className="w-full h-auto">
           <TopCreater/>
         </div>

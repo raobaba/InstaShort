@@ -55,6 +55,11 @@ export const sidebarLinks = [
       label: "Saved",
     },
     {
+      imgURL:Message,
+      route:"/message",
+      label:"Message"
+    },
+    {
       imgURL: Create,
       route: "/create-post",
       label: "Create",

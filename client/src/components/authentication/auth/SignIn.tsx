@@ -19,7 +19,7 @@ const SignIn: React.FC = () => {
              <div className="mb-3 w-full flex flex-col items-center">
               <label
                 htmlFor="username"
-                className="block text-xs text-gray-300 font-medium text-light-2 text-left w-5/6"
+                className="block text-xs text-gray-300 font-medium text-left w-5/6"
               >
                 Username <span className="text-red-500 text-sm">*</span>
               </label>
@@ -34,7 +34,7 @@ const SignIn: React.FC = () => {
             <div className="mb-3 w-full flex flex-col items-center">
               <label
                 htmlFor="email"
-                className="block text-xs text-gray-300 font-medium text-light-2 text-left w-5/6"
+                className="block text-xs text-gray-300 font-medium text-left w-5/6"
               >
                 Email <span className="text-red-500 text-sm">*</span>
               </label>
@@ -49,7 +49,7 @@ const SignIn: React.FC = () => {
             <div className="mb-3 w-full flex flex-col items-center">
               <label
                 htmlFor="password"
-                className="block text-xs text-gray-300 font-medium text-light-2 text-left w-5/6"
+                className="block text-xs text-gray-300 font-medium text-left w-5/6"
               >
                 Password <span className="text-red-500 text-sm">*</span>
               </label>
@@ -64,7 +64,7 @@ const SignIn: React.FC = () => {
             <div className="mb-3 w-full flex flex-col items-center">
               <label
                 htmlFor="confirm-password"
-                className="block text-xs text-gray-300 font-medium text-light-2 text-left w-5/6"
+                className="block text-xs text-gray-300 font-medium text-left w-5/6"
               >
                 Confirm Password <span className="text-red-500 text-sm">*</span>
               </label>
@@ -84,7 +84,7 @@ const SignIn: React.FC = () => {
             </button>
           </form>
           <p className="text-gray-300 sm:mt-0 md:mt-0 lg:mt-0">OR</p>
-          <p className="text-small-regular text-gray-300 text-light-2 text-center mt-2">
+          <p className="text-small-regular text-gray-300 text-center mt-2">
             Don't have an Accoung ?
             <Link
               to="/sign-up"

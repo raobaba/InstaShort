@@ -37,7 +37,7 @@ const Home = () => {
             <img src={Home_Logo} width={36} height={36} alt="add" />
             <h2 className="h3-bold md:h2-bold text-left w-full">Home Feed</h2>
           </div>
-          <div className="max-w-full bg-dark-2 w-11/12 mt-[-50px] transparent rounded-md shadow-md">
+          <div className="max-w-full bg-black bg-opacity-50 w-11/12 mt-[-50px] transparent rounded-md shadow-md">
             <div className="flex justify-between items-center">
               {isLoading || !email ? (
                 <div className="h-14">{/* Loader component */}</div>

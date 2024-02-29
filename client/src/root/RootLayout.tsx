@@ -16,7 +16,7 @@ const RootLayout = () => {
       <section className="flex flex-1 h-full">
         <Outlet />
       </section>
-      <div className="lg:w-80 w-40 h-full px-10 py-5 bg-dark-2 hidden lg:block">
+      <div className="lg:w-80 w-40 h-full px-10 py-5 inset-0 bg-dark-2 z-0 hidden lg:block">
         {isLoading || !user.email ? (
           <div className="h-14">
             <Loader />
@@ -29,8 +29,8 @@ const RootLayout = () => {
               className="h-14 w-14 rounded-full"
             />
             <div className="flex flex-col">
-              <p className="body-bold">{"Rajan Kumar"}</p>
-              <p className="small-regular text-light-3">@{"rajanrao"}</p>
+              <p className="body-bold text-white">{"Rajan Kumar"}</p>
+              <p className="small-regular text-gray-300">@{"rajanrao"}</p>
             </div>
           </Link>
         )}

@@ -3,6 +3,7 @@ import Wallpaper from "../assets/icons/wallpaper.svg"
 import People from "../assets/icons/people.svg";
 import Bookmark from "../assets/icons/bookmark.svg"
 import Create from "../assets/icons/gallery-add.svg";
+import Message from '../assets/images/sent1.png'
 
 export const sidebarLinks = [
     {
@@ -25,16 +26,11 @@ export const sidebarLinks = [
       route: "/saved",
       label: "Saved",
     },
-    // {
-    //   imgURL:Message,
-    //   route:"/message",
-    //   label:"Message"
-    // },
-    // {
-    //   imgURL:Notification,
-    //   route:"/notification",
-    //   label:"Notification"
-    // },
+    {
+      imgURL:Message,
+      route:"/message",
+      label:"Message"
+    },
     {
       imgURL: Create,
       route: "/create-post",

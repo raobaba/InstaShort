@@ -34,7 +34,7 @@ function Explore() {
         </div>
 
         <div className="flex flex-wrap gap-9 w-full items-center justify-center max-w-6xl">
-          <div className="border w-[313px] h-96 rounded-xl relative">
+          <div className="border w-[313px] h-80 rounded-xl relative">
             <img src={ProPic} alt="" className="h-full w-full z-0 rounded-lg" />
             <div className="flex justify-between w-full h-8 absolute bottom-0 z-10">
               <div className="w-32 h-full flex justify-between">
@@ -47,7 +47,7 @@ function Explore() {
               </div>
             </div>
           </div>
-          <div className="border w-[313px] h-96 rounded-xl relative">
+          <div className="border w-[313px] h-80 rounded-xl relative">
             <img src={ProPic} alt="" className="h-full w-full z-0 rounded-lg" />
             <div className="flex justify-between w-full h-8 absolute bottom-0 z-10">
               <div className="w-32 h-full flex justify-between">
@@ -60,7 +60,7 @@ function Explore() {
               </div>
             </div>
           </div>
-          <div className="border w-[313px] h-96 rounded-xl relative">
+          <div className="border w-[313px] h-80 rounded-xl relative">
             <img src={ProPic} alt="" className="h-full w-full z-0 rounded-lg" />
             <div className="flex justify-between w-full h-8 absolute bottom-0 z-10">
               <div className="w-32 h-full flex justify-between">
@@ -73,7 +73,7 @@ function Explore() {
               </div>
             </div>
           </div>
-          <div className="border w-[313px] h-96 rounded-xl relative">
+          <div className="border w-[313px] h-80 rounded-xl relative">
             <img src={ProPic} alt="" className="h-full w-full z-0 rounded-lg" />
             <div className="flex justify-between w-full h-8 absolute bottom-0 z-10">
               <div className="w-32 h-full flex justify-between">
@@ -86,7 +86,7 @@ function Explore() {
               </div>
             </div>
           </div>
-          <div className="border w-[313px] h-96 rounded-xl relative">
+          <div className="border w-[313px] h-80 rounded-xl relative">
             <img src={ProPic} alt="" className="h-full w-full z-0 rounded-lg" />
             <div className="flex justify-between w-full h-8 absolute bottom-0 z-10">
               <div className="w-32 h-full flex justify-between">

@@ -43,7 +43,7 @@ function CreatePost() {
                 rows={4}
                 value={caption}
                 onChange={handleCaptionChange}
-                className="p-2 block w-full border bg-dark-2 rounded-md focus:outline-none focus:ring-blue-500 border-blue-500 focus:border-blue-500 sm:text-sm"
+                className="p-2 block w-full border inset-0 bg-black opacity-50 rounded-md focus:outline-none focus:ring-blue-500 border-blue-500 focus:border-blue-500 sm:text-sm"
               ></textarea>
             </div>
             <div className="mt-3">
@@ -66,7 +66,7 @@ function CreatePost() {
               <input
                 placeholder="Art, Expression, Learn"
                 type="text"
-                className="shad-input rounded-lg"
+                className="shad-input rounded-lg inset-0 bg-black opacity-50"
               />
             </div>
             <div className="flex flex-col mt-3">
@@ -79,7 +79,7 @@ function CreatePost() {
               <input
                 placeholder="Art, Expression, Learn"
                 type="text"
-                className="shad-input rounded-lg"
+                className="shad-input rounded-lg inset-0 bg-black opacity-50"
               />
             </div>
             <div className="flex gap-4 items-center mt-5 justify-end">

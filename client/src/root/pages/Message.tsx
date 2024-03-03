@@ -1,8 +1,11 @@
-import React from 'react'
+import React from 'react';
+import MetaData from '../../components/shared/MetaData';
 
 function message() {
   return (
-    <div>message</div>
+    <>
+          <MetaData title={"InstaShort | Message"} />
+    </>
   )
 }
 

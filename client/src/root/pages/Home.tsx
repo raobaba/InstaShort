@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import MetaData from "../../components/shared/MetaData";
-import Home_Logo from "../../assets/icons/home.svg";
 import Placeholder from "../../assets/icons/profile-placeholder.svg";
 import Edit from "../../assets/icons/edit.svg";
 import ProPic from "../../assets/images/profilepic.png";
@@ -10,14 +9,15 @@ import Comment from "../../assets/icons/comment.svg";
 import Share from "../../assets/images/sent.png";
 import Save from "../../assets/icons/save.svg";
 
+
 const ProfileLink = () => (
   <Link to={`/profile/${1}`} className="ml-10 mt-5 flex gap-3 items-center">
     <img src={Placeholder} alt="profile" className="h-14 w-14 rounded-full" />
     <div className="flex flex-col">
       <p className="body-bold">{"Rajan Kumar"}</p>
-      <div className="w-full justify-around flex">
-      <p className="small-regular text-light-3">@{"rajanrao"}</p>
-       <p className="ml-10 lg:ml-5 small-regular text-light-3">New Delhi</p>
+      <div className="w-full flex flex-col md:flex-row items-center md:justify-between">
+        <p className="small-regular text-light-3 mb-2 md:mb-0">@{"rajanrao"}</p>
+        <p className="small-regular text-light-3 md:ml-5">New Delhi</p>
       </div>
     </div>
   </Link>
@@ -31,13 +31,12 @@ const Home = () => {
   return (
     <>
       <MetaData title={"InstaShort | Home"} />
-      <div className="mt-[-50px] flex flex-1">
+      <div className="mt-[-30px] flex flex-1">
         <div className="common-container">
-          <div className="max-w-6xl py-10 px-5 flex-start gap-3 justify-start w-full">
-            <img src={Home_Logo} width={36} height={36} alt="add" />
-            <h2 className="h3-bold md:h2-bold text-left w-full">Home Feed</h2>
+          <div className="max-w-6xl py-10 px-5 border flex-start gap-3 justify-start w-full">
+          
           </div>
-          <div className="max-w-full bg-black bg-opacity-50 w-11/12 mt-[-50px] transparent rounded-md shadow-md">
+          <div className="max-w-full bg-black bg-opacity-50 w-11/12 mt-[-10px] transparent rounded-md shadow-md">
             <div className="flex justify-between items-center">
               {isLoading || !email ? (
                 <div className="h-14">{/* Loader component */}</div>

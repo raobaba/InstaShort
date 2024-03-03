@@ -27,8 +27,8 @@ function Notifications() {
 
       {isModalOpen && (
         <div className='fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50'>
-          <div className='bg-dark-2 w-1/3 p-8 rounded-md'>
-            <h2 className='text-2xl font-semibold mb-4'>Your Notifications</h2>
+          <div className='bg-gray-300 w-1/3 p-8 rounded-md'>
+            <h2 className='text-2xl text-black font-semibold mb-4'>Your Notifications</h2>
             <div className="flex justify-between items-center">
         <div className="flex justify-between mt-3">
           <div className="mr-2">
@@ -39,8 +39,8 @@ function Notifications() {
             />
           </div>
           <div>
-            <h4 className="text-md font-semibold">Rajan Kumar</h4>
-            <h6 className="text-gray-500 text-[15px]">is like your post and others</h6>
+            <h4 className="text-md text-black font-semibold">Rajan Kumar</h4>
+            <h6 className="text-gray-700 text-[15px]">is like your post and others</h6>
           </div>
         </div>
         <div>

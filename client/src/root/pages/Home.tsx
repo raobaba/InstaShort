@@ -9,7 +9,6 @@ import Comment from "../../assets/icons/comment.svg";
 import Share from "../../assets/images/sent.png";
 import Save from "../../assets/icons/save.svg";
 
-
 const ProfileLink = () => (
   <Link to={`/profile/${1}`} className="ml-10 mt-5 flex gap-3 items-center">
     <img src={Placeholder} alt="profile" className="h-14 w-14 rounded-full" />
@@ -33,9 +32,7 @@ const Home = () => {
       <MetaData title={"InstaShort | Home"} />
       <div className="mt-[-30px] flex flex-1">
         <div className="common-container">
-          <div className="max-w-6xl py-10 px-5 border flex-start gap-3 justify-start w-full">
-          
-          </div>
+          <div className="max-w-6xl py-10 px-5 border flex-start gap-3 justify-start w-full"></div>
           <div className="max-w-full bg-black bg-opacity-50 w-11/12 mt-[-10px] transparent rounded-md shadow-md">
             <div className="flex justify-between items-center">
               {isLoading || !email ? (
@@ -92,11 +89,11 @@ const Home = () => {
                     <summary className="text-light-3 cursor-pointer mt-2 relative z-10">
                       View all comments
                     </summary>
-                    <input
-                      type="text"
+                    <textarea
                       placeholder="Add a comment..."
-                      className="w-11/12 mt-2 bg-transparent"
-                    />
+                      className="w-11/12 mt-2 bg-transparent border-b border-t border-r border-l border-gray-400 focus:outline-none resize-none"
+                      rows={3} // Adjust rows as needed
+                    ></textarea>
                   </details>
                 </div>
               </div>

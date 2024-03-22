@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 import Loader from "../components/shared/Loader";
 import Topbar from "../components/shared/Topbar";
@@ -11,6 +11,11 @@ import Notifications from "../components/shared/Notifications";
 const RootLayout = () => {
   const isLoading = false;
   const user = { email: "example@example.com" };
+  const location = useLocation();
+
+  // Check if the current URL endpoint is '/originalurl/message'
+  const isMessagePage = location.pathname === "/message";
+
   return (
     <div className="w-full block md:flex">
       <Topbar />
@@ -18,33 +23,34 @@ const RootLayout = () => {
       <section className="flex flex-1 h-full">
         <Outlet />
       </section>
-      <div className="lg:w-80 w-full h-full inset-0 bg-dark-2 z-0 hidden lg:block">
-        {isLoading || !user.email ? (
-          <div className="h-14">
-            <Loader />
-          </div>
-        ) : (
-          <Link to={`/profile/${1}`} className="flex px-5 py-5 gap-3 items-center">
-            <img
-              src={Placeholder}
-              alt="profile"
-              className="h-14 w-14 rounded-full"
-            />
-            <div className="flex flex-col">
-              <p className="body-bold text-white">{"Rajan Kumar"}</p>
-              <p className="small-regular text-gray-300">@{"rajanrao"}</p>
+      {/* Conditionally render the specified code */}
+      {!isMessagePage && (
+        <div className="lg:w-80 w-full h-full inset-0 bg-dark-2 z-0 hidden lg:block">
+          {isLoading || !user.email ? (
+            <div className="h-14">
+              <Loader />
             </div>
-            
-          </Link>
-        )}
-        <div className="w-full h-auto">
-          <Notifications/>
+          ) : (
+            <Link to={`/profile/${1}`} className="flex px-5 py-5 gap-3 items-center">
+              <img
+                src={Placeholder}
+                alt="profile"
+                className="h-14 w-14 rounded-full"
+              />
+              <div className="flex flex-col">
+                <p className="body-bold text-white">{"Rajan Kumar"}</p>
+                <p className="small-regular text-gray-300">@{"rajanrao"}</p>
+              </div>
+            </Link>
+          )}
+          <div className="w-full h-auto">
+            <Notifications/>
+          </div>
+          <div className="w-full h-auto">
+            <TopCreater/>
+          </div>
         </div>
-        <div className="w-full h-auto">
-          <TopCreater/>
-        </div>
-      </div>
-
+      )}
       <Bottombar />
     </div>
   );
